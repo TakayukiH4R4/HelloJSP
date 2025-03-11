@@ -8,12 +8,15 @@
 </head>
 <body>
 
+	<%--エラーページ専用の文言 --%>
 	<%@page isErrorPage="true" %>
+
 	<p>数値を入力してください</p>
 	<button onclick="history.back()">戻る</button>
 	<br>
 	<p><%=exception %></p>
 
+	<%--エラーメッセージ --%>
 	<table border=1>
 	<tr>
 		<td><strong>エラーメッセージ</strong></td>
